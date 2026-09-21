@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дякуємо за заявку! | integroUA</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body style="display: flex; flex-direction: column; justify-content: center; min-height: 100vh;">
+
+  <div class="container" style="max-width: 720px; text-align: center;">
+    <div class="section-frame">
+      <div class="smoke-glow smoke-glow-top"></div>
+      
+      <div style="width: 64px; height: 64px; border-radius: 50%; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.4); display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+
+      <h1 style="font-size: 2.25rem; margin-bottom: 16px;" id="thanks-title">Дякуємо! Заявку прийнято.</h1>
+      <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 32px;" id="thanks-desc">
+        Ми зв’яжемося з вами протягом 30 хвилин (у робочий час), щоб уточнити деталі вашого проєкту та надіслати персоналізовану пропозицію.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+        <a href="index.html" class="btn btn-glass-primary">
+          <span>На головну</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        </a>
+        <a href="agencies.html" class="btn btn-outline">Партнерська програма</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('type') === 'simulator') {
+      document.getElementById('thanks-title').textContent = 'Розрахунок прийнято!';
+      document.getElementById('thanks-desc').textContent = 'Ми надішлемо вам на email детальний розрахунок розподілу бюджету та індивідуальну пропозицію протягом одного робочого дня.';
+    }
+    if (params.get('type') === 'agency') {
+      document.getElementById('thanks-title').textContent = 'Дякуємо за інтерес до партнерства!';
+      document.getElementById('thanks-desc').textContent = 'Ми зв’яжемося з керівником вашої агенції для обговорення деталей White-Label та пілотного проєкту.';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none">
+  <!-- Symbol -->
+  <g transform="translate(4, 6)">
+    <rect width="16" height="16" rx="4" fill="#0F172A"/>
+    <rect x="20" width="16" height="16" rx="4" fill="#0F172A"/>
+    <rect y="20" width="16" height="16" rx="4" fill="#0F172A"/>
+    <rect x="20" y="20" width="16" height="16" rx="4" fill="#F59E0B"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="52" y="31" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5px" fill="#0F172A">integro<tspan fill="#F59E0B">UA</tspan></text>
+</svg>
